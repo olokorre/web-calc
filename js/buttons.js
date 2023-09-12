@@ -11,10 +11,16 @@ $('.clean').click(function () {
 
 $('#equals').click(function () {
     try {
-        const result = eval(display.text());
+        const expression = display.text();
+        const result = eval(expression.replace('^', '**'));
         display.text(result);
     } catch (e) {
         console.error(e);
         display.text('');
     }
+});
+
+$('.backspace').click(function () {
+    const expression = display.text();
+    display.text(expression.slice(0, expression.length - 1));
 });
