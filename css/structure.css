@@ -24,4 +24,5 @@ button.numbers.operations {
 textarea#display {
     font-size: large;
     background-color: rgb(54, 54, 54);
+    text-align: right;
 }
