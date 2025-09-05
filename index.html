@@ -13,37 +13,44 @@
 <body>
     <div class="container" align="center">
         <h1>Welcome to the Web Calculator :3</h1>
-        <div class="calculator">
-            <textarea id="display" cols="17" rows="3" readonly></textarea>
-            <div class="row">
-                <button class="clean">AC</button>
-                <button class="backspace">B</button>
-                <button class="numbers operations">^</button>
-                <button class="numbers operations">/</button>
+        <div class="main-content">
+            <div class="calculator">
+                <textarea id="display" cols="17" rows="3" readonly></textarea>
+                <div class="row">
+                    <button class="clean">AC</button>
+                    <button class="backspace">B</button>
+                    <button class="numbers operations">^</button>
+                    <button class="numbers operations">/</button>
+                </div>
+                <div class="row">
+                    <button class="numbers">7</button>
+                    <button class="numbers">8</button>
+                    <button class="numbers">9</button>
+                    <button class="numbers operations">+</button>
+                </div>
+                <div class="row">
+                    <button class="numbers">4</button>
+                    <button class="numbers">5</button>
+                    <button class="numbers">6</button>
+                    <button class="numbers operations">-</button>
+                </div>
+                <div class="row">
+                    <button class="numbers">1</button>
+                    <button class="numbers">2</button>
+                    <button class="numbers">3</button>
+                    <button class="numbers operations">*</button>
+                </div>
+                <div class="row">
+                    <button class="numbers operations">(</button>
+                    <button class="numbers">0</button>
+                    <button class="numbers operations">)</button>
+                    <button id="equals">=</button>
+                </div>
             </div>
-            <div class="row">
-                <button class="numbers">7</button>
-                <button class="numbers">8</button>
-                <button class="numbers">9</button>
-                <button class="numbers operations">+</button>
-            </div>
-            <div class="row">
-                <button class="numbers">4</button>
-                <button class="numbers">5</button>
-                <button class="numbers">6</button>
-                <button class="numbers operations">-</button>
-            </div>
-            <div class="row">
-                <button class="numbers">1</button>
-                <button class="numbers">2</button>
-                <button class="numbers">3</button>
-                <button class="numbers operations">*</button>
-            </div>
-            <div class="row">
-                <button class="numbers operations">(</button>
-                <button class="numbers">0</button>
-                <button class="numbers operations">)</button>
-                <button id="equals">=</button>
+            <div class="history-panel">
+                <h3>Histórico</h3>
+                <div id="history-list"></div>
+                <button id="clear-history" class="clear-history-btn">Limpar Histórico</button>
             </div>
         </div>
     </div>
